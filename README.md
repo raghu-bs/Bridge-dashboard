@@ -1,3 +1,4 @@
+[![Build Status](https://dev.azure.com/bridge-purchasing/Bridge Purchasing Platform/_apis/build/status/raghu-bs.Bridge-dashboard?branchName=master)](https://dev.azure.com/bridge-purchasing/Bridge Purchasing Platform/_build/latest?definitionId=7&branchName=master)
 # angular-material-6-theme
 Angular Material 6 Free theme. 
 
