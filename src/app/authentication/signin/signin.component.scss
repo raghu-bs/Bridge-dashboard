@@ -1,0 +1,46 @@
+.img-center {
+  max-width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+}
+
+.row {
+  background: #ffff;
+  height: 100%;
+}
+
+.signin-btn {
+  width: 28%;
+  color: white;
+  background: #3f94b5;
+  font-weight: bold;
+  margin-left: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.example-full-width {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.mat-checkbox:not(.mat-checkbox-disabled).mat-accent .mat-checkbox-ripple .mat-ripple-element {
+  background-color: #3f94b5;
+}
+
+.signInContainer {
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  background-color: #041e42;
+  // background: url(../../assets/images/logo.png) right;
+  background-size: cover;
+}
