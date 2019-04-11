@@ -23,6 +23,10 @@ tspan {
   padding: 0
 }
 
+body {
+  overflow: hidden;
+}
+
 .mat-drawer-backdrop.mat-drawer-shown {
   visibility: hidden !important;
 }
