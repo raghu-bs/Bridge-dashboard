@@ -3,7 +3,6 @@ import { HttpInterceptor, HttpHandler, HttpRequest, HttpEvent, HttpResponse, Htt
 import { Observable } from 'rxjs';
 import 'rxjs/add/operator/do';
 import { environment } from '../../environments/environment';
-import 'rxjs/Rx';
 import { map } from 'rxjs/operators';
 import { Router } from '@angular/router';
 

@@ -7,11 +7,11 @@ import {
   MatTableModule, MatTabsModule, MatProgressSpinnerModule
 } from '@angular/material';
 import { ChartModule } from 'angular-highcharts';
+import { FormsModule } from '@angular/forms';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { HomeComponent } from '../home/home.component';
-import { OrganisationListComponent } from './organisation-list/organisation-list.component';
 import { OrdersComponent } from './orders/orders.component';
 import { CodesComponent } from './codes/codes.component';
 import { OrganisationsComponent } from './organisations/organisations.component';
@@ -26,14 +26,13 @@ import { CodesErrorsComponent } from './codes/codes-errors/codes-errors.componen
 import { OrganisationsOverviewComponent } from './organisations/organisations-overview/organisations-overview.component';
 import { OrganisationsAllComponent } from './organisations/organisations-all/organisations-all.component';
 import { OrganisationsNotPlacedordersComponent } from './organisations/organisations-not-placedorders/organisations-not-placedorders.component';
-import { FormsModule } from '@angular/forms';
+import { OrganizationListComponent } from './organization-list/organization-list.component';
 
 @NgModule({
   declarations: [
     SidenavComponent,
     DashboardComponent,
     HomeComponent,
-    OrganisationListComponent,
     OrdersComponent,
     CodesComponent,
     OrganisationsComponent,
@@ -47,7 +46,8 @@ import { FormsModule } from '@angular/forms';
     CodesErrorsComponent,
     OrganisationsOverviewComponent,
     OrganisationsAllComponent,
-    OrganisationsNotPlacedordersComponent
+    OrganisationsNotPlacedordersComponent,
+    OrganizationListComponent
   ],
   imports: [
     CommonModule,

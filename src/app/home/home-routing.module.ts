@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from '../home/home.component';
-import { OrganisationListComponent } from './organisation-list/organisation-list.component';
+import { OrganizationListComponent } from './organization-list/organization-list.component';
 import { OrdersComponent } from './orders/orders.component';
 import { OrderOverviewComponent } from './orders/order-overview/order-overview.component';
 import { OrdersErrorsComponent } from './orders/orders-errors/orders-errors.component';
@@ -27,8 +27,8 @@ const homeroutes: Routes = [
         component: DashboardComponent
       },
       {
-        path: 'organisation-list',
-        component: OrganisationListComponent
+        path: 'organization-list',
+        component: OrganizationListComponent
       },
       {
         path: 'orders',
