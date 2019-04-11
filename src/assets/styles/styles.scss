@@ -19,6 +19,8 @@ td,
 th,
 tspan {
   font-family: Helvetica !important;
+  margin: 0;
+  padding: 0;
 }
 
 .mat-drawer-backdrop.mat-drawer-shown {
@@ -183,4 +185,12 @@ h6 {
 
 .left {
   float: left;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pointer {
+  cursor: pointer;
 }

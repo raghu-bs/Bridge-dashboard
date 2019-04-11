@@ -27,6 +27,10 @@ h1.example-app-name {
   flex: 1 0 auto;
 }
 
+.example-fill-remaining-space{
+  flex: 1 1 auto;
+}
+
 .mat-drawer {
   background: $white !important;
   padding: 10px;
@@ -56,4 +60,16 @@ menu-items-list {
 .close-icon {
   color: $primary-btn-color;
   float: right;
+}
+
+.sign-out{
+  color: $primary-theme-color;
+}
+
+.mar-10{
+  margin: 10px;
+}
+
+.pointer {
+  cursor: pointer;
 }

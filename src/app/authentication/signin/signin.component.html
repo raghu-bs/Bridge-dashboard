@@ -1,24 +1,118 @@
-<div class="signin">
-    <div class="row">
-        <div class="col-sm-4"></div>
-        <div class="col-sm-4"></div>
-        <div class="col-sm-4">
-
-            <button routerLink="/home/dashboard">Signin</button>
-        </div>
-    </div>
+<div class="login-background">
+  <div class="col-md-4 col-sm-6 col-9 login-form">
+    <mat-card>
+      <mat-card-title>
+        <img class="logo-img" src="../../../assets/images/bridge-mart-logo.png" width="50%">
+      </mat-card-title>
+      <mat-card-content>
+        <form class="example-form">
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Username" [(ngModel)]="username" name="username" required>
+            <span matPrefix>
+              <mat-icon class="">person</mat-icon>
+            </span>
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Password" [(ngModel)]="password" type="password" name="password" required>
+            <span matPrefix>
+              <mat-icon class="">vpn_key</mat-icon>
+            </span>
+          </mat-form-field>
+          <span><a href="" class="login-forgot">Forgot Password?</a></span>
+        </form>
+        <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
+      </mat-card-content>
+      <mat-card-actions>
+        <button class="login-button" mat-raised-button (click)="login()">Login</button>
+      </mat-card-actions>
+      <div>
+        Don't have an account? <a href="" class="sign-up"><strong>SIGN UP</strong></a>
+      </div>
+    </mat-card>
+  </div>
 </div>
-<!-- <div class="text-center">
-  <div class="row">
-    <div class="col-sm-4"></div>
-    <div class="col-sm-4">
-      <img src="assets/images/rx.png" />
-    </div>
-    <div class="col-sm-4"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="login-background">
+  <img class="login-img" src="../../../assets/images/loginBg.png">
+
+  <div class="col-md-4 login-form">
+    <mat-card>
+      <mat-card-title>
+        <img class="logo-img" src="../../../assets/images/bridge-mart-logo.png" width="50%">
+      </mat-card-title>
+      <mat-card-content>
+        <form class="example-form">
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Username" [(ngModel)]="username" name="username" required>
+            <span matPrefix>
+              <mat-icon class="">person</mat-icon>
+            </span>
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Password" [(ngModel)]="password" type="password" name="password" required>
+            <span matPrefix>
+              <mat-icon class="">vpn_key</mat-icon>
+            </span>
+          </mat-form-field>
+          <span><a href="" class="login-forgot">Forgot Password?</a></span>
+        </form>
+        <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
+      </mat-card-content>
+      <mat-card-actions>
+        <button class="login-button" mat-raised-button (click)="login()" color="primary">Login</button>
+      </mat-card-actions>
+      <div>
+        Don't have an account? <a href="">SIGN UP</a>
+      </div>
+    </mat-card>
   </div>
 </div> -->
-<!-- <div class="row">
-  <div class="col-sm-4"></div>
-  <div class="col-sm-4"><img src="assets/images/rx.png" /></div>
-  <div class="col-sm-4"></div>
-</div> -->
+
+
+<!-- <form class="example-form">
+  <table class="example-full-width" cellspacing="0">
+    <tr>
+      <td>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Username" [(ngModel)]="username" name="username" required>
+          <span matPrefix>
+            <mat-icon class="">person</mat-icon>
+          </span>
+        </mat-form-field>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Password" [(ngModel)]="password" type="password" name="password"
+            required>
+          <span matPrefix>
+            <mat-icon class="">vpn_key</mat-icon>
+          </span>
+        </mat-form-field>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span><a href="" class="login-forgot">Forgot Password?</a></span>
+      </td>
+    </tr>
+  </table>
+</form> -->

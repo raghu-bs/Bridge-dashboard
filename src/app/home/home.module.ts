@@ -4,7 +4,7 @@ import { HomeRoutingModule } from './home-routing.module';
 import {
   MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatCardModule, MatSnackBarModule,
   MatListModule, MatMenuModule, MatBadgeModule, MatFormFieldModule, MatInputModule, MatCheckboxModule,
-  MatTableModule, MatTabsModule
+  MatTableModule, MatTabsModule, MatProgressSpinnerModule
 } from '@angular/material';
 import { ChartModule } from 'angular-highcharts';
 
@@ -26,6 +26,7 @@ import { CodesErrorsComponent } from './codes/codes-errors/codes-errors.componen
 import { OrganisationsOverviewComponent } from './organisations/organisations-overview/organisations-overview.component';
 import { OrganisationsAllComponent } from './organisations/organisations-all/organisations-all.component';
 import { OrganisationsNotPlacedordersComponent } from './organisations/organisations-not-placedorders/organisations-not-placedorders.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -46,17 +47,18 @@ import { OrganisationsNotPlacedordersComponent } from './organisations/organisat
     CodesErrorsComponent,
     OrganisationsOverviewComponent,
     OrganisationsAllComponent,
-    OrganisationsNotPlacedordersComponent
+    OrganisationsNotPlacedordersComponent,
   ],
   imports: [
     CommonModule,
     HomeRoutingModule,
+    FormsModule,
     MatToolbarModule,
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
     ChartModule, MatCardModule, MatSnackBarModule, MatListModule, MatMenuModule, MatTabsModule,
-    MatBadgeModule, MatFormFieldModule, MatInputModule, MatCheckboxModule, MatTableModule,
+    MatBadgeModule, MatFormFieldModule, MatInputModule, MatCheckboxModule, MatTableModule, MatProgressSpinnerModule
   ]
 })
 export class HomeModule { }
