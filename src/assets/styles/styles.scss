@@ -19,6 +19,8 @@ td,
 th,
 tspan {
   font-family: Helvetica !important;
+  margin: 0;
+  padding: 0
 }
 
 .mat-drawer-backdrop.mat-drawer-shown {
@@ -170,4 +172,8 @@ h6 {
   width: 100%;
   margin-left: -15px;
   margin-right: -15px;
+}
+
+a {
+  text-decoration: none;
 }
