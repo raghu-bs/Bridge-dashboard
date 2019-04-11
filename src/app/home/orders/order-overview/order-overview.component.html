@@ -38,7 +38,7 @@
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
       <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
     </table>
-
+    <button mat-button class="btn-green view-all-btn right">View All</button>
   </div>
   <div class="col-md-6">
     <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
@@ -70,5 +70,8 @@
       <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
     </table>
 
+    <button mat-button class="btn-green view-all-btn right">View All</button>
+
   </div>
+
 </div>
