@@ -181,3 +181,20 @@ h6 {
 a {
   text-decoration: none;
 }
+
+.mat-form-field-appearance-outline .mat-form-field-infix {
+  padding: 0 0 7px 0 !important;
+}
+
+.btn-green {
+  background-color: $primary-btn-color;
+  color: $primary-font-color;
+}
+
+.white-color {
+  color: $primary-font-color !important;
+}
+
+.green-color {
+  color: $primary-heading-color;
+}

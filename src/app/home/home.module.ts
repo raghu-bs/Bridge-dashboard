@@ -4,7 +4,7 @@ import { HomeRoutingModule } from './home-routing.module';
 import {
   MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatCardModule, MatSnackBarModule,
   MatListModule, MatMenuModule, MatBadgeModule, MatFormFieldModule, MatInputModule, MatCheckboxModule,
-  MatTableModule, MatTabsModule, MatProgressSpinnerModule
+  MatTableModule, MatTabsModule, MatProgressSpinnerModule, MatPaginator, MatPaginatorModule
 } from '@angular/material';
 import { ChartModule } from 'angular-highcharts';
 import { FormsModule } from '@angular/forms';
@@ -58,7 +58,8 @@ import { OrganizationListComponent } from './organization-list/organization-list
     MatSidenavModule,
     MatIconModule,
     ChartModule, MatCardModule, MatSnackBarModule, MatListModule, MatMenuModule, MatTabsModule,
-    MatBadgeModule, MatFormFieldModule, MatInputModule, MatCheckboxModule, MatTableModule, MatProgressSpinnerModule
+    MatBadgeModule, MatFormFieldModule, MatInputModule, MatCheckboxModule, MatTableModule, MatProgressSpinnerModule,
+    MatPaginatorModule
   ]
 })
 export class HomeModule { }
