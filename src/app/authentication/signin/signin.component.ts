@@ -40,11 +40,11 @@ export class SigninComponent implements OnInit {
       let loginCredentials = { email: this.username, password: this.password };
       // this.loginService.login(loginCredentials).subscribe(data => {
       //   console.log(data);
-      // if(data) {
-      //   this.router.navigate(['home/dashboard']);
-      // }
-      this.router.navigate(['home/dashboard']);
-      //});
+      //   if(data) {
+      //     this.router.navigate(['home/dashboard']);
+      //   }
+        this.router.navigate(['home/dashboard']);
+     // });
     } else {
       alert('Invalid credentials');
     }
