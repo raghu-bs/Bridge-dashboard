@@ -1,46 +1,242 @@
-.img-center {
-  max-width: 80%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 10px;
+@import "../../../assets/styles/variables.scss";
+
+// .login-img {
+//   width: 100%;
+//   height: 99vh;
+// }   
+
+// .logo-img {
+//   height: 70px;
+//   width: 85px;
+//   // margin-left: 9rem !important;
+//   }
+
+// .login-forgot {
+//   //margin-left: 16rem !important;
+//   color: $primary-gray-heading;
+// }
+
+// .login-button{
+//   //margin-left: 9rem !important;
+//   background-color: $primary-btn-color;
+//   color: $primary-font-color;
+// }
+
+// .login-form {
+//   top: 9rem;
+//   margin-left: 7rem;
+//   text-align: center;
+// }
+
+// .login-background {
+//   background-image: url('../../../assets/images/loginBg.png');
+//   background-repeat:no-repeat;
+//   background-size: cover;
+//   // height: 657px;
+//   // max-height: 1500px;
+// }
+
+// .example-form {
+//   min-width: 150px;
+//   max-width: 500px;
+//   width: 100%;
+// }
+
+// .example-full-width {
+//   width: 100%;
+// }
+
+// .sign-up {
+//   color: $primary-btn-color;
+// }
+
+// @media screen and (max-width: 600px) {
+//   .login-form {
+//     top: 9rem;
+//     margin-left: 3rem;
+//     text-align: center;
+//   }
+
+//   .login-background {
+//     background-image: none;
+//     height: 657px;
+//   }
+
+//   .logo-img {
+//     height: 70px;
+//     width: 85px;
+//     // margin-left: 3rem !important;
+//     }
+  
+//   .login-forgot {
+//     // margin-left: 3rem !important;
+//   }
+  
+//   .login-button{
+//     // margin-left: 3rem !important;
+//   }
+// }
+
+// @media screen and (min-width: 600px) {
+//   .login-form {
+//     top: 9rem;
+//     margin-left: 7rem;
+//     text-align: center;
+//   }
+
+//   .logo-img {
+//     height: 70px;
+//     width: 85px;
+//     // margin-left: 3rem !important;
+//     }
+  
+//   .login-forgot {
+//     // margin-left: 1rem !important;
+//   }
+  
+//   .login-button{
+//     // margin-left: 3rem !important;
+//   }
+// }
+
+// @media only screen and (min-width: 768px) {
+//   .login-form {
+//     top: 9rem;
+//     margin-left: 7rem;
+//     text-align: center;
+//   }
+
+//   .logo-img {
+//     height: 70px;
+//     width: 85px;
+//     //margin-left: 4rem !important;
+//     }
+  
+//   .login-forgot {
+//     //margin-left: 4rem !important;
+//   }
+  
+//   .login-button{
+//     //margin-left: 4rem !important;
+//   }
+// }
+
+// @media only screen and (min-width: 992px) {
+//   .login-form {
+//     top: 9rem;
+//     margin-left: 7rem;
+//     text-align: center;
+//   }
+
+//   .logo-img {
+//     height: 70px;
+//     width: 85px;
+//     //margin-left: 6rem !important;
+//     }
+  
+//   .login-forgot {
+//     //margin-left: 8rem !important;
+//   }
+  
+//   .login-button{
+//     //margin-left: 6rem !important;
+//   }
+// }
+
+#img.login-img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.row {
-  background: #ffff;
-  height: 100%;
+.login-img {
+  height: 100vh;
 }
 
-.signin-btn {
-  width: 28%;
-  color: white;
-  background: #3f94b5;
-  font-weight: bold;
-  margin-left: 20px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.login-form {
+  position: absolute;
+  top: 139px;
+  text-align: center;
+  margin-left: 56px;
+}
+
+.logo-img {
+  height: 70px;
+  width: 85px;
+}
+
+.login-forgot {
+  color: $primary-gray-heading;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
 }
 
 .example-full-width {
-  width: 60%;
-  display: block;
-  margin: 0 auto;
+  width: 100%;
 }
 
-.align-center {
-  text-align: center;
+.sign-up {
+  color: $primary-btn-color;
 }
 
-.mat-checkbox:not(.mat-checkbox-disabled).mat-accent .mat-checkbox-ripple .mat-ripple-element {
-  background-color: #3f94b5;
+@media screen and (max-width: 600px) {
+  
+  .login-img {
+    display: none;
+  }
+
+  .login-form {
+    top: 9rem;
+    margin-left: 3rem;
+    text-align: center;
+  }
+
+  .logo-img {
+    height: 70px;
+    width: 85px;
+  }
 }
 
-.signInContainer {
-  display: block;
-  height: 100vh;
-  width: 100vw;
-  background-color: #041e42;
-  // background: url(../../assets/images/logo.png) right;
-  background-size: cover;
+@media screen and (min-width: 600px) {
+  .login-form {
+    top: 6rem;
+    margin-left: 1rem;
+    text-align: center;
+  }
+
+  .logo-img {
+    height: 70px;
+    width: 85px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .login-form {
+    top: 7rem;
+    margin-left: 2rem;
+    text-align: center;
+  }
+
+  .logo-img {
+    height: 70px;
+    width: 85px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .login-form {
+    top: 8rem;
+    margin-left: 3rem;
+    text-align: center;
+  }
+
+  .logo-img {
+    height: 70px;
+    width: 85px;
+  }
 }

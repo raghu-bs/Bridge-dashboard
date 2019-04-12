@@ -1,0 +1,78 @@
+<div *ngIf="!small" class="col-md-12 col-sm-12 grey lighten-2">
+
+  <div class="d-flex flex-row justify-content-end ">
+    <div class="p-1">
+      <mat-form-field appearance="outline">
+        <input matInput placeholder="Search">
+        <mat-icon matSuffix>search</mat-icon>
+      </mat-form-field>
+    </div>
+    <div class="p-1">
+      <button mat-raised-button class="primary-btn">Filter</button>
+    </div>
+  </div>
+
+  <div class="col-md-12 col-sm-12 col-12 org-center">
+    <mat-card class="">
+      <mat-card-content class="d-flex">
+        <div class="org-lists">Apple</div>
+        <div class="org-lists">
+          <span>1200</span> 
+          <span>Members</span>
+        </div>
+        <div class="org-lists">
+          <span><button mat-raised-button color="accent">Active</button></span>
+          <span>ACCOUNT STATUS</span>
+        </div>
+        <div class="org-lists">
+            <span>6/1/2019 </span>
+            <span> START DATE</span>
+          </div>
+        <div class="org-lists">
+            <span>$12000</span>
+              <span>YTD LOAD</span>
+            </div>
+      </mat-card-content>
+    </mat-card>
+    <mat-divider></mat-divider>
+
+
+    <mat-paginator [length]="100" [pageSize]="1" [pageSizeOptions]="[5, 10, 25, 100]">
+    </mat-paginator>
+  </div>
+</div>
+
+<div *ngIf="small">
+  <div class="heading-web d-flex justify-content-around">
+    <h1 class="white-color">Organizational List</h1>
+    <mat-icon class="org-icon-mob">search</mat-icon>
+    <mat-icon class="org-icon-mob">filter</mat-icon>
+  </div>
+  <div class="org-content">
+    <mat-card>
+      <mat-card-content>
+        <mat-card-title class="table-header">Apple</mat-card-title>
+        <div class="d-flex justify-content-around org-inner-content">
+          <div class="mx-3 org-list-mob">
+              <span>1200</span> 
+              <span>Members</span>
+          </div>
+          <div class="mx-3 org-list-mob">
+              <span><button mat-raised-button color="accent">Active</button></span>
+              <span>ACCOUNT STATUS</span>
+          </div>
+        </div>
+        <div class="d-flex justify-content-around org-inner-content">
+          <div class="my-3 org-list-mob">
+              <span>6/1/2019 </span>
+              <span> START DATE</span>
+          </div>
+          <div class="my-3 org-list-mob">
+              <span>$12000</span>
+              <span>YTD LOAD</span>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

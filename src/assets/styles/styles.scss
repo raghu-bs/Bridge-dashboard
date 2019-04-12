@@ -19,6 +19,12 @@ td,
 th,
 tspan {
   font-family: Helvetica !important;
+  margin: 0;
+  padding: 0
+}
+
+body {
+  overflow: hidden;
 }
 
 .mat-drawer-backdrop.mat-drawer-shown {
@@ -170,4 +176,16 @@ h6 {
   width: 100%;
   margin-left: -15px;
   margin-right: -15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-infix {
+  padding: 0 0 7px 0 !important;
+}
+
+.white-color {
+  color: $primary-font-color !important;
 }
